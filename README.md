@@ -1,2 +1,1 @@
-# WordPress-Bootstrap-Theme
-Single one-page template for photo galleries, portfolios, and more
+mustikasarana.github.io
