@@ -1032,22 +1032,7 @@ background-blend-mode: overlay, screen, overlay, overlay, normal;
                 <b:include data='post' name='post'/>
               </div>
               <!-- Comments -->
-              <b:if cond='data:view.isSingleItem and data:post.allowComments'>
-                <div class='blog-post-comments'>
-                  <b:include data='post' name='threadedCommentsDisqus'/>
-                  <b:include data='post' name='commentPicker'/>
-                </div>
-              </b:if>
-              <b:include cond='data:view.isPost and data:allBylineItems.backlinks' data='post' name='postNavigation'/> 
-            </b:includable>
-            <b:includable id='postCommentsLink'>
-              <b:if cond='data:view.isMultipleItems'>
-                <span class='byline post-comment-link container'>
-                  <b:include cond='data:post.commentSource != 1' name='commentsLink'/>
-                  <b:include cond='data:post.commentSource == 1' name='commentsLinkIframe'/>
-                </span>
-              </b:if>
-            </b:includable>
+              
             <b:includable id='postFeaturedImage' var='post'>
               <!-- Post Featured Image on Index -->
               <div class='post-image-wrap'>
